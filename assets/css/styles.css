@@ -1,0 +1,378 @@
+/* css/styles.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    width: 250px;
+    background-color: #f3f4f6;
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside nav ul li a:hover {
+    background-color: #e5e7eb;
+    color: #4f46e5;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.btn-primary {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f9fafb;
+    font-weight: bold;
+}
+
+/* Cards / Contact details */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-left {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    background: #e5e7eb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 24px;
+    color: #6b7280;
+}
+
+.contact-name h2 {
+    margin: 0;
+}
+
+.contact-meta {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.contact-actions .btn-assign {
+    background: #10b981;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.contact-actions .btn-switch {
+    background: #f59e0b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.field-label {
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Notes */
+.notes-list {
+    margin-bottom: 30px;
+}
+
+.notes-list .note {
+    margin-bottom: 20px;
+    border-left: 3px solid #ddd;
+    padding-left: 15px;
+}
+
+.note-author {
+    margin: 0;
+    font-size: 14px;
+}
+
+.note-text {
+    margin: 5px 0;
+    color: #333;
+}
+
+.note-time {
+    color: #999;
+    font-size: small;
+}
+
+.note-form {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.note-form h4 {
+    margin-top: 0;
+}
+
+/* Forms */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.form-msg {
+    margin-top: 15px;
+}
+
+/* Login page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box input.form-control {
+    margin-bottom: 15px;
+}
+
+.login-box button {
+    width: 100%;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* Dashboard / Filters */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-btn {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.filter-btn.active {
+    font-weight: bold;
+}
+
+.table-responsive {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Utilities and helpers */
+.text-right {
+    text-align: right;
+}
+
+.badge-sales {
+    background: #fffbeb;
+    color: #b45309;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #fcd34d;
+}
+
+.badge-support {
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #bfdbfe;
+}
+
+.view-link {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.empty-state {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+}
+
+.form-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.login-box h2 {
+    margin-top: 0;
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.success {
+    color: green;
+}
+
+.access-denied {
+    padding: 20px;
+    color: red;
+}

@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_id'])) {
 <body>
 
     <header>
-        <img src="assets/images/logo.png" alt="Logo"> 
+        <img src="assets/images/logo.jpg" alt="Logo"> 
         <h1>Dolphin CRM</h1>
     </header>
 

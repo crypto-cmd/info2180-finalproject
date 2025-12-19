@@ -43,8 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Dolphin CRM - Login</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+
 <body class="login-page">
     <div class="login-box">
+
+        <img src="../assets/images/logo.jpg" alt="Logo" class = "logo"> 
         <h2>Dolphin CRM</h2>
         <h3>Login</h3>
         

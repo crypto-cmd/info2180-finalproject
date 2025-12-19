@@ -264,6 +264,11 @@ th {
     font-size: 0.9em;
 }
 
+.logo {
+    width: 200px;
+    height: auto;
+}
+
 /* Dashboard / Filters */
 .dashboard-header {
     display: flex;
